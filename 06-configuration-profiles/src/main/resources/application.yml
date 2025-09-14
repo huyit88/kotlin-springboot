@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: configuration-profile
+  profiles:
+    group:
+      prod-full: [prod, tracing, metrics]
+
+logging:
+  level:
+    com.example: DEBUG
+
+billing:
+  currency: USD
+  tax-rate: 0.1
+
+app:
+  color: none

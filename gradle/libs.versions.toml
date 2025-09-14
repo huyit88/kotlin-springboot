@@ -9,6 +9,7 @@ spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-start
 spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

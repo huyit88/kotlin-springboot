@@ -11,3 +11,6 @@ This repo is used to learn and practice Kotlin with Springboot.
 
 05 — Testing basics — 2
 Unit tests w/ JUnit 5, assert/arrange patterns, test slices avoided.
+
+06 — Configuration profiles — 2
+application-*.yml, @Profile, property binding.
