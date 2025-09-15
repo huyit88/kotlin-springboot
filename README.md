@@ -14,3 +14,6 @@ Unit tests w/ JUnit 5, assert/arrange patterns, test slices avoided.
 
 06 — Configuration profiles — 2
 application-*.yml, @Profile, property binding.
+
+07 — Data JPA — 3
+Entities, repositories, relationships (minimal).

@@ -3,6 +3,7 @@ kotlin = "2.0.21"
 springBoot = "3.3.4"
 springDepMgmt = "1.1.6"
 junit-bom = "5.10.3"
+h2-database = "2.2.224"
 
 [libraries]
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
@@ -10,6 +11,8 @@ spring-boot-starter-validation = { module = "org.springframework.boot:spring-boo
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+h2-database = { module = "com.h2database:h2", version.ref = "h2-database" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
