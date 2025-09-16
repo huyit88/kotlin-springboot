@@ -17,3 +17,6 @@ application-*.yml, @Profile, property binding.
 
 07 — Data JPA — 3
 Entities, repositories, relationships (minimal).
+
+08 — Database migrations — 2
+Flyway/Liquibase basics, versioned scripts.

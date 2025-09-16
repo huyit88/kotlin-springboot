@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS countries (
+    code VARCHAR(2) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);

@@ -4,23 +4,10 @@
 dependencies {    
     implementation(libs.spring.boot.starter.data.jpa)
     implementation(libs.kotlin.reflect)
+    implementation(libs.flywaydb)
     runtimeOnly(libs.h2.database)
 }
 
 plugins {
     alias(libs.plugins.kotlin.spring.jpa)
 }
-
-/**
-noArg {
-    annotation("jakarta.persistence.Entity")
-    annotation("jakarta.persistence.Embeddable")
-    annotation("jakarta.persistence.MappedSuperclass")
-}
-
-allOpen {
-    annotation("jakarta.persistence.Entity")
-    annotation("jakarta.persistence.Embeddable")
-    annotation("jakarta.persistence.MappedSuperclass")
-}
-*/

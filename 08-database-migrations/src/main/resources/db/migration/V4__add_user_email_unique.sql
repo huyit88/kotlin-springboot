@@ -1,0 +1,1 @@
+Alter table users add constraint uq_users_email unique(email);
