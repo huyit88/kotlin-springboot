@@ -20,3 +20,6 @@ Entities, repositories, relationships (minimal).
 
 08 — Database migrations — 2
 Flyway/Liquibase basics, versioned scripts.
+
+09 — DTO mapping — 2
+Manual mappers, request/response shapes (no frameworks).
