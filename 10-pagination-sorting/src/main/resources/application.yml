@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: data-jpa
+    name: pagination-sorting
   datasource:
     url: jdbc:h2:mem:appdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
     driver-class-name: org.h2.Driver

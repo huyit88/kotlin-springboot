@@ -23,3 +23,6 @@ Flyway/Liquibase basics, versioned scripts.
 
 09 — DTO mapping — 2
 Manual mappers, request/response shapes (no frameworks).
+
+10 — Pagination & sorting — 2
+Request params, page/sort semantics (no DB coupling yet, then JPA).
