@@ -26,3 +26,6 @@ Manual mappers, request/response shapes (no frameworks).
 
 10 — Pagination & sorting — 2
 Request params, page/sort semantics (no DB coupling yet, then JPA).
+
+11 — Testing with mocks — 3
+Mockito/MockK, behavior & verification.
