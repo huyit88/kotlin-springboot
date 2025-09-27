@@ -8,6 +8,8 @@ flywaydb = "10.17.3"
 kotlinSpringJpa = "2.2.0"
 mockk = "1.13.14"
 springMockk = "4.0.2"
+testcontainers-junitJupiter = "1.20.3"
+testcontainers-postgresql = "1.20.3"
 
 [libraries]
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
@@ -21,6 +23,8 @@ flywaydb = { module = "org.flywaydb:flyway-core", version.ref = "flywaydb" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 spring-mockk = { module = "com.ninja-squad:springmockk", version.ref = "springMockk" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test" }
+testcontainers-junitJupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers-junitJupiter"}
+testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers-postgresql"}
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

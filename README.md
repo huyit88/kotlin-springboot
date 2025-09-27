@@ -29,3 +29,6 @@ Request params, page/sort semantics (no DB coupling yet, then JPA).
 
 11 — Testing with mocks — 3
 Mockito/MockK, behavior & verification.
+
+12 — Integration tests (DB) — 3
+Testcontainers/H2, transactional tests.
