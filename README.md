@@ -32,3 +32,6 @@ Mockito/MockK, behavior & verification.
 
 12 — Integration tests (DB) — 3
 Testcontainers/H2, transactional tests.
+
+13 — Error handling (global) — 3
+@ControllerAdvice, error contract, problem details.
