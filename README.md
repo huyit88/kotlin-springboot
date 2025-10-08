@@ -36,5 +36,9 @@ Testcontainers/H2, transactional tests.
 13 — Error handling (global) — 3
 @ControllerAdvice, error contract, problem details.
 
-14 — API documentation (OpenAPI) — 2
+14 — API documentation (OpenAPI) 
 springdoc-openapi, minimal annotations.
+
+
+15 — Security basics — 3
+Spring Security filter chain, basic auth, authorization rules.
