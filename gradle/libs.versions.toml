@@ -11,6 +11,8 @@ springMockk = "4.0.2"
 testcontainers-junitJupiter = "1.20.3"
 testcontainers-postgresql = "1.20.3"
 springdoc-openapi-starter-webmvc-ui = "2.6.0"
+java-jwt = "4.4.0"
+jackson-module = "2.17.2"
 
 [libraries]
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
@@ -28,6 +30,8 @@ spring-mockk = { module = "com.ninja-squad:springmockk", version.ref = "springMo
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test" }
 testcontainers-junitJupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers-junitJupiter"}
 testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers-postgresql"}
+java-jwt = { module = "com.auth0:java-jwt", version.ref = "java-jwt"}
+jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson-module" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
