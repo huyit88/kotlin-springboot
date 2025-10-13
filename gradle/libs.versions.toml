@@ -13,7 +13,8 @@ testcontainers-postgresql = "1.20.3"
 springdoc-openapi-starter-webmvc-ui = "2.6.0"
 java-jwt = "4.4.0"
 jackson-module = "2.17.2"
-
+spring-boot-starter-webflux = "3.3.4"
+kotlinx-coroutines-reactor = "1.10.2"
 [libraries]
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
 spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security" }
@@ -32,6 +33,8 @@ testcontainers-junitJupiter = { module = "org.testcontainers:junit-jupiter", ver
 testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers-postgresql"}
 java-jwt = { module = "com.auth0:java-jwt", version.ref = "java-jwt"}
 jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson-module" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" , version.ref = "spring-boot-starter-webflux"}
+kotlinx-coroutines-reactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor", version.ref = "kotlinx-coroutines-reactor"}
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

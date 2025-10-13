@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: external-calls
+
+logging:
+  level:
+    com.example: DEBUG
