@@ -15,11 +15,15 @@ java-jwt = "4.4.0"
 jackson-module = "2.17.2"
 spring-boot-starter-webflux = "3.3.4"
 kotlinx-coroutines-reactor = "1.10.2"
+caffeine = "3.1.8"
+
 [libraries]
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
 spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security" }
 spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-starter-cache = { module = "org.springframework.boot:spring-boot-starter-cache" }
+
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
@@ -35,6 +39,7 @@ java-jwt = { module = "com.auth0:java-jwt", version.ref = "java-jwt"}
 jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson-module" }
 spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" , version.ref = "spring-boot-starter-webflux"}
 kotlinx-coroutines-reactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor", version.ref = "kotlinx-coroutines-reactor"}
+caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffeine"}
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
