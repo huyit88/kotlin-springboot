@@ -39,6 +39,19 @@ Testcontainers/H2, transactional tests.
 14 — API documentation (OpenAPI) 
 springdoc-openapi, minimal annotations.
 
-
 15 — Security basics — 3
 Spring Security filter chain, basic auth, authorization rules.
+
+
+16 — JWT auth — 3
+Issue/verify tokens, stateless sessions.
+
+17 — External calls (WebClient) — 3
+Reactive client, timeouts, codecs.
+
+18 — Caching — 2
+@Cacheable/@CacheEvict, simple provider (Caffeine).
+
+19 — Async & scheduling — 2
+@Async, @Scheduled, executors.
+
