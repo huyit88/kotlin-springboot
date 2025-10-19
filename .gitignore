@@ -12,6 +12,7 @@ build/
 *.iml
 *.ipr
 out/
+uploads/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
