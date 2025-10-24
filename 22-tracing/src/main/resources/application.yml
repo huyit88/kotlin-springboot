@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: tracing
+
+logging:
+  level:
+    com.example: DEBUG
+    io.micrometer.tracing: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0  # sample everything so you always get a traceId
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
