@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: resilience
+  aop:
+    auto: true
+
+logging:
+  level:
+    com.example: DEBUG
+
+resilience4j:
+  bulkhead:
+    instances:
+      thumb:
+        max-concurrent-calls: 2
+        max-wait-duration: 0
+  timelimiter:
+    instances:
+      report:
+        timeout-duration: 1s
+  retry:
+    instances:
+      catalog:
+        max-attempts: 5
+        wait-duration: 200ms
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2.0
+        retry-exceptions:
+          - java.util.concurrent.TimeoutException
+  circuitbreaker:
+    instances:
+      weather:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 4
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+      report:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 4
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 2
+        automatic-transition-from-open-to-half-open-enabled: true
