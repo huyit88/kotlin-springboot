@@ -55,3 +55,12 @@ Reactive client, timeouts, codecs.
 19 — Async & scheduling — 2
 @Async, @Scheduled, executors.
 
+20 - file-upload-download
+
+21 - Observability
+
+22 - Tracing
+
+23 - Resilience 
+
+24 - Transactions
