@@ -1,0 +1,11 @@
+type User{ id: ID!, fullName: String!, email: String}
+type Query{
+    user(id: ID!): User
+    users: [User!]!
+}
+type Mutation {
+    renameUser(id: ID!, name: String!): User!
+}
+
+type Order{ id: ID!, total: Float!}
+extend type User{ orders: [Order!]!}
