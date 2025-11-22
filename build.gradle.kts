@@ -18,8 +18,15 @@ allprojects {
 subprojects {
   apply(plugin = "org.jetbrains.kotlin.jvm")
   apply(plugin = "org.jetbrains.kotlin.plugin.spring")
-  apply(plugin = "org.springframework.boot")
   apply(plugin = "io.spring.dependency-management")
+  
+  // Only apply Spring Boot plugin to app module, not library modules
+  val isLibraryModule = project.path.contains(":module-catalog") || 
+                        project.path.contains(":module-customer") || 
+                        project.path.contains(":module-orders")
+  if (!isLibraryModule) {
+    apply(plugin = "org.springframework.boot")
+  }
 
   configure<JavaPluginExtension> {
     // Use the current Java version
@@ -38,9 +45,15 @@ subprojects {
   }
 
   afterEvaluate {
-    dependencies {
-      "implementation"(libs.spring.boot.starter.web)
-      "testImplementation"(libs.spring.boot.starter.test)
+    // Only add default dependencies to non-library modules
+    val isLibraryModule = project.path.contains(":module-catalog") || 
+                          project.path.contains(":module-customer") || 
+                          project.path.contains(":module-orders")
+    if (!isLibraryModule) {
+      dependencies {
+        "implementation"(libs.spring.boot.starter.web)
+        "testImplementation"(libs.spring.boot.starter.test)
+      }
     }
   }
 }
