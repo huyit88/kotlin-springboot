@@ -10,3 +10,7 @@ include(":27-architecture:module-catalog")
 include(":27-architecture:module-customer")
 include(":27-architecture:module-orders")
 include(":27-architecture:app")
+
+// Microservices (under 28-microservices)
+include(":28-microservices:customers-service")
+include(":28-microservices:orders-service")
